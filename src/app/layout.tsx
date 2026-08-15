@@ -2,11 +2,13 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { AppShell } from "@/components/app-shell";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export const metadata: Metadata = {
   title: { default: "診断士 Sprint", template: "%s | 診断士 Sprint" },
   description: "演習から弱点復習までを最短化する、診断士試験向けオフライン学習PWA",
-  manifest: "/manifest.webmanifest",
-  icons: { icon: "/icon.svg" },
+  manifest: `${basePath}/manifest.webmanifest`,
+  icons: { icon: `${basePath}/icon.svg` },
   appleWebApp: { capable: true, statusBarStyle: "default", title: "診断士Sprint" },
 };
 

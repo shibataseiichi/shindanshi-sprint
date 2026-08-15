@@ -2,12 +2,12 @@
   "name": "診断士 Sprint",
   "short_name": "診断士Sprint",
   "description": "2027年度 中小企業診断士試験の演習中心学習PWA",
-  "start_url": "/",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#f5f7f2",
   "theme_color": "#153a32",
   "lang": "ja",
   "icons": [
-    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
   ]
 }

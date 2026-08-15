@@ -46,6 +46,18 @@ pnpm start
 
 PWAのService Workerはproduction buildでのみ有効です。iPhone/iPadでは、同一LAN上のHTTPS環境またはデプロイ先をSafariで開き、「共有」→「ホーム画面に追加」でインストールします。
 
+## GitHub Pagesへ公開
+
+このリポジトリには `.github/workflows/deploy-pages.yml` が含まれています。GitHubで空のリポジトリを作り、`main` ブランチをpushした後、リポジトリの **Settings → Pages → Build and deployment → Source** を **GitHub Actions** に設定します。
+
+以後は `main` へのpushごとに、単体テスト、静的ビルド、GitHub Pagesへの公開が自動実行されます。通常のリポジトリなら公開URLは次の形式です。
+
+```text
+https://<ユーザー名>.github.io/<リポジトリ名>/
+```
+
+GitHub Actions上ではリポジトリ名から `basePath` を自動設定するため、設定ファイルをユーザー名に合わせて書き換える必要はありません。
+
 ## データと著作権
 
 回答履歴、復習状態、メモは `shindanshi-sprint-v2` IndexedDBに保存されます。「データ」画面からJSONでバックアップ・復元できます。
