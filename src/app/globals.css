@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #17221f;
+  --forest: #153a32;
+  --lime: #d6f05d;
+  --paper: #f5f7f2;
+  --line: #dce3da;
+}
+
+* { box-sizing: border-box; }
+html { background: var(--paper); color: var(--ink); }
+body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif; }
+button, select, input, textarea { font: inherit; }
+button { cursor: pointer; }
+
+.card { border: 1px solid var(--line); border-radius: 1.25rem; background: white; box-shadow: 0 8px 30px rgb(21 58 50 / 5%); }
+.eyebrow { color: #5d716b; font-size: .72rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
+.focus-ring:focus-visible { outline: 3px solid #90a91e; outline-offset: 2px; }
