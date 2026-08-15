@@ -1,0 +1,12 @@
+node_modules
+.next
+out
+coverage
+playwright-report
+test-results
+public/sw.js
+public/workbox-*.js
+.DS_Store
+*.log
+.env*
+!.env.example
